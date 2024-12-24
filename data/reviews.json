@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Dan Lupu",
+    "rating": 5,
+    "comment": "They have the best company for transport in town. With good prices and help if you need.",
+    "date": "a year ago",
+    "src": "images/testimonials/testimonial1.png"
+  },
+  {
+    "name": "Cristi Baciu",
+    "rating": 5,
+    "comment": "Cea mai bună firmă de transport si colete din galați si din toată România la ora actuală...pot să spun felicitări șoferilor și personalul de profesionalism, la care a dat dovadă ...multumesc sunteți cei mai buni..",
+    "date": "3 years ago",
+    "src": "images/testimonials/testimonial2.png"
+  },
+  {
+    "name": "Mihaela Stan",
+    "rating": 5,
+    "comment": "Personal cu bun simț,raspunzand la toate întrebările și ajutandu-ma sa găsesc ceva potrivit cerințelor mele",
+    "date": "2 years ago",
+    "src": "images/testimonials/testimonial3.png"
+  },
+  {
+    "name": "Ion Ionescu",
+    "rating": 5,
+    "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "date": "2 years ago",
+    "src": "images/testimonials/testimonial4.png"
+  },
+  {
+    "name": "Mircea Popescu",
+    "rating": 5,
+    "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "date": "2 years ago",
+    "src": "images/testimonials/testimonial1.png"
+  }
+]

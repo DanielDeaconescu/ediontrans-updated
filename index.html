@@ -139,7 +139,7 @@
 
         <!-- Projects Row 1 -->
         <div class="row row-custom">
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4 col-custom">
             <div class="">
               <a
                 href="./images/photo_gallery/index_gallery/img1.jpg"
@@ -153,7 +153,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4 col-custom">
             <div class="">
               <a
                 href="./images/photo_gallery/index_gallery/img2.jpg"
@@ -167,7 +167,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4 col-custom">
             <div class="">
               <a
                 href="./images/photo_gallery/index_gallery/img3.jpg"
@@ -262,7 +262,7 @@
     </section> -->
 
     <!-- Testimonials -->
-    <section id="testimonials" class="testimonials my-7">
+    <section id="testimonials" class="testimonials mt-7">
       <div class="container">
         <div class="testimonials-header">
           <h2 class="testimonials-title">Testimoniale</h2>
@@ -343,7 +343,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalLabel">
+            <h3 class="modal-title" id="ourServices">
               Alege serviciul Edion Trans
             </h3>
             <button
@@ -353,7 +353,84 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body"></div>
+          <div class="modal-body">
+            <form id="form_it" action="form_process_italy.php" method="POST">
+              <div class="mb-4">
+                <label for="name" class="form-label">Nume: </label>
+                <input
+                  type="text"
+                  class="form-control text-dark input-custom"
+                  name="name"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="phone" class="form-label">Număr de telefon</label>
+                <input
+                  type="tel"
+                  class="form-control text-dark input-custom"
+                  name="phone"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="departure-date" class="form-label"
+                  >Alege data plecării</label
+                >
+                <!-- Change this in order to be able to choose only certain dates -->
+                <input
+                  type="date"
+                  id="departure-date"
+                  class="form-control"
+                  name="departure-date"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="departure-place" class="form-label"
+                  >Punctul de plecare</label
+                >
+                <select
+                  name="departure-place"
+                  id="departure-place"
+                  class="form-select"
+                >
+                  <option value="null">Alege punctul de plecare</option>
+                  <option value="Loc plecare 1">Loc plecare 1</option>
+                  <option value="Loc plecare 2">Loc plecare 2</option>
+                  <option value="Loc plecare 3">Loc plecare 3</option>
+                  <option value="Loc plecare 4">Loc plecare 4</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="arrival-place" class="form-label"
+                  >Punctul de sosire</label
+                >
+                <select
+                  name="arrival-place"
+                  id="arrival-place"
+                  class="form-select"
+                >
+                  <option value="null">Alege punctul de sosire</option>
+                  <option value="Punct sosire 1">Punct sosire 1</option>
+                  <option value="Punct sosire 2">Punct sosire 2</option>
+                  <option value="Punct sosire 3">Punct sosire 3</option>
+                  <option value="Punct sosire 4">Punct sosire 4</option>
+                </select>
+              </div>
+              <div class="mb-4 d-flex justify-content-center gap-4">
+                <div class="submit-container">
+                  <button type="submit" class="btn btn-primary">Trimite</button>
+                </div>
+                <div class="cancel-container">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Anulează
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -368,512 +445,100 @@
       </div>
     </div>
 
-    <!-- Solutions -->
-    <section id="solutions" class="solutions my-5">
+    <!-- Contact-Us Section -->
+    <section id="contact-us-section" class="contact-us-section">
       <div class="container">
-        <div class="row mb-4">
-          <div
-            class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center"
-          >
-            <h5>
-              <span class="badge bg-primary rounded-0 text-uppercase">
-                Solutions
-              </span>
-            </h5>
-            <h2 class="fw-bold">
-              Vera Provides Software Solutions For Business Acceleration
-            </h2>
-          </div>
+        <div class="section-header">
+          <h2 class="contact-us-title">Contactează-ne</h2>
+          <p class="contact-us-subtitle">Lasă-ne un mesaj!</p>
         </div>
-        <!-- Solutions Row 1 -->
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card bg-secondary">
-              <img src="images/solution-1.jpg" alt="" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">ERP Software Solutions</h5>
-                <p class="card-text">
-                  Our ERP software solution streamlines your business processes
-                  and enhances operational efficiency. With integrated modules
-                  for finance, human resources, and more, you can make
-                  data-driven decisions.
-                </p>
-                <div class="badge bg-primary p-2 text-uppercase">
-                  Management
+
+        <div class="section-content container d-flex row">
+          <div class="section-content-text col-md-8">
+            <h3 class="contact-us-text">
+              Dorești informații suplimentare? Completează formularul de contact
+              și vom reveni la tine cât mai curând posibil. Suntem aici să îți
+              răspundem la întrebări și să îți oferim toate detaliile de care ai
+              nevoie pentru o călătorie plăcută!
+            </h3>
+            <button
+              type="button"
+              class="btn btn-secondary fill-form-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#askQuestionModal"
+            >
+              Completează formular
+            </button>
+
+            <!-- Ask a question modal -->
+            <div
+              class="modal fade"
+              id="askQuestionModal"
+              tabindex="-1"
+              aria-labelledby="askQuestionModal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">
+                      Pune o întrebare
+                    </h3>
+                    <button
+                      type="button"
+                      class="btn-close btn-close-modal"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body-fill-form"></div>
+                  <div class="modal-footer"></div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-md-6 mb-4">
-            <div class="card bg-secondary">
-              <img src="images/solution-2.jpg" alt="" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">CRM Software Solutions</h5>
-                <p class="card-text">
-                  Our CRM software solution helps you build stronger customer
-                  relationships and drive sales growth. Manage leads, track
-                  interactions, and deliver personalized experiences to maximize
-                  customer satisfaction and loyalty.
-                </p>
-                <div class="badge bg-dark p-2 text-uppercase">Marketing</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Solutions Row 2 -->
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card bg-secondary">
-              <img src="images/solution-3.jpg" alt="" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">SFA Software Solutions</h5>
-                <p class="card-text">
-                  Our SFA software solution empowers your sales team with the
-                  tools they need to drive revenue growth. Streamline sales
-                  processes, track performance, and enhance collaboration to
-                  close deals faster.
-                </p>
-                <div class="badge bg-primary p-2 text-uppercase">
-                  Management
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <div class="card bg-secondary">
-              <img src="images/solution-4.jpg" alt="" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">WMS Software Solutions</h5>
-                <p class="card-text">
-                  Our WMS software solution optimizes your warehouse operations
-                  and improves inventory management. Gain real-time visibility,
-                  automate processes, and reduce costs to ensure efficient
-                  logistics.
-                </p>
-                <div class="badge bg-dark p-2 text-uppercase">Marketing</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Details 1 -->
-    <section id="details" class="details my-5 position-relative">
-      <div class="container">
-        <div class="row pt-5">
-          <div class="col-lg-6">
-            <h2 class="fw-bold">Evaluation & Deployment</h2>
-            <hr class="hr-heading" />
-            <p>
-              We offer comprehensive evaluation and deployment services to
-              ensure a smooth and successful implementation of our software
-              solutions.
-            </p>
-            <ul class="list-unstyled lh-lg">
-              <li class="d-flex align-items-center">
-                <i class="fas fa-check text-primary mx-3"></i>
-                <div>
-                  <strong>Customized solutions: </strong>We tailor our solutions
-                  to align with your unique business needs
-                </div>
-              </li>
-              <li class="d-flex align-items-center">
-                <i class="fas fa-check text-primary mx-3"></i>
-                <div>
-                  <strong>Seamless Integration:</strong> Our team ensures smooth
-                  integration of the software into your existing infrastructure,
-                  minimizing disruptions
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6">
-            <img
-              src="images/details-1.jpg"
-              alt=""
-              class="img-fluid rounded-2"
-            />
-          </div>
-        </div>
-      </div>
-      <img
-        src="images/vertical-decoration-left.svg"
-        alt=""
-        class="vertical-decoration position-absolute d-none d-md-block"
-      />
-    </section>
-
-    <!-- Details 2 -->
-    <section class="details-2 my-5 position-relative">
-      <div class="container">
-        <div class="row pt-5">
-          <div class="col-lg-6">
-            <img
-              src="images/details-2.jpg"
-              alt=""
-              class="img-fluid rounded-2"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h2 class="fw-bold">Maintenance & Support</h2>
-            <hr class="hr-heading" />
-            <p>
-              We provide comprehensive maintenance and support services to
-              ensure the smooth and uninterrupted operation of your software
-              solutions. <a href="#">Learn more about our support services.</a>
-            </p>
-            <ul class="list-unstyled lh-lg">
-              <li class="d-flex align-items-center">
-                <i class="fas fa-check text-primary mx-3"></i>
-                <div>
-                  <strong>Proactive Maintenance:</strong> We proactively monitor
-                  and maintain your software solutions to prevent issues and
-                  optimize performance.
-                </div>
-              </li>
-              <li class="d-flex align-items-center">
-                <i class="fas fa-check text-primary mx-3"></i>
-                <div>
-                  <strong>Timely Updates:</strong> We ensure your software is up
-                  to date with the latest features, security patches, and
-                  enhancements.
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <img
-        src="images/vertical-decoration-right.svg"
-        alt=""
-        class="vertical-decoration position-absolute d-none d-md-block"
-      />
-    </section>
-
-    <!-- Expertise -->
-    <section id="expertise" class="expertise bg-secondary py-5 my-6">
-      <div class="container">
-        <div class="row mb-5">
-          <div
-            class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center"
-          >
-            <h5>
-              <span class="badge bg-primary rounded-0 text-uppercase"
-                >Expertise</span
-              >
-            </h5>
-            <h2 class="fw-bold">Expertise Strong Points</h2>
-            <p>
-              We take pride in our expertise. With years of experience and a
-              dedicated team, we deliver exceptional software solutions tailored
-              to your needs. Our strong points include:
-            </p>
-          </div>
-        </div>
-        <!-- Expertise Row 1 -->
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card bg-transparent border-0 text-center mb-3">
-              <div class="card-image">
-                <i class="fas fa-lightbulb fa-5x text-primary"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Flexible Services</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card bg-transparent border-0 text-center mb-3">
-              <div class="card-image">
-                <i class="fas fa-desktop fa-5x text-primary"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Great Design</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card bg-transparent border-0 text-center mb-3">
-              <div class="card-image">
-                <i class="fas fa-wifi fa-5x text-primary"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Easy To Use</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card bg-transparent border-0 text-center mb-3">
-              <div class="card-image">
-                <i class="fas fa-cog fa-5x text-primary"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Smart Options</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Expertise Row 2 -->
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card bg-transparent border-0 text-center mb-3">
-              <div class="card-image">
-                <i class="fas fa-glasses fa-5x text-primary"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Advanced Tech</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card bg-transparent border-0 text-center mb-3">
-              <div class="card-image">
-                <i class="fas fa-graduation-cap fa-5x text-primary"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Good Expertise</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card bg-transparent border-0 text-center mb-3">
-              <div class="card-image">
-                <i class="fas fa-chart-bar fa-5x text-primary"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Detailed Reports</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card bg-transparent border-0 text-center mb-3">
-              <div class="card-image">
-                <i class="fas fa-cloud fa-5x text-primary"></i>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Cloud Storage</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Video -->
-    <section class="video my-6">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex flex-column align-items-center">
-            <div class="position-relative">
-              <img src="images/video-preview.jpg" alt="" class="img-fluid" />
-              <a
-                class="video-btn"
-                data-bs-toggle="modal"
-                data-bs-target="#videoModal"
-                data-bs-src="https://www.youtube.com/embed/u72H_zZzkcw"
-              >
-                <span class="video-play-button">
-                  <span></span>
+          <div class="section-content-addresses-calls col-md-4">
+            <div>
+              <h4 class="address-title">
+                <span class="address-title-icon">
+                  <i class="fas fa-map-marker-alt"></i>
                 </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row video-points px-6 mt-5">
-          <div class="col-lg-4">
-            <h4 class="fw-bold">10 Years Of Experience</h4>
-            <p>
-              With over 10 years of experience, we have gained valuable insights
-              and expertise to deliver high-quality software solutions
-            </p>
-          </div>
-          <div class="col-lg-4">
-            <h4 class="fw-bold">Enduring Partnerships</h4>
-            <p>
-              We believe in building enduring partnerships with our clients. We
-              establish long-term relationships based on trust
-            </p>
-          </div>
-          <div class="col-lg-4">
-            <h4 class="fw-bold">Skilled Capable Team</h4>
-            <p>
-              Our team consists of skilled and capable professionals who are
-              passionate about delivering excellence
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Video Modal -->
-      <div class="video-modal">
-        <div id="videoModal" class="modal fade">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="ratio ratio-16x9">
-                <iframe
-                  frameborder="0"
-                  class="embed-responsive-item"
-                  id="video"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section id="pricing" class="pricing my-6">
-      <div class="container">
-        <div class="row mb-4">
-          <div
-            class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center"
-          >
-            <h5>
-              <span class="badge bg-primary rounded-0 text-uppercase">
-                Pricing
-              </span>
-            </h5>
-            <h2 class="fw-bold">Flexible Pricing Options</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <!-- Pricing Col 1 -->
-          <div class="col-md-3">
-            <div class="card bg-secondary text-center rounded-0">
-              <div class="card-body">
-                <div class="xl-text fw-bold">$99</div>
-                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
-                  Standard
-                </h4>
-                <p>
-                  Our standard pricing plan offers a comprehensive set of
-                  features for your software needs
-                </p>
-                <ul class="list-unstyled lh-lg mt-5">
-                  <li class="text-uppercase fs-5 fw-bold">Subscribers List</li>
-                  <li class="text-uppercase fs-5 fw-bold">
-                    User Admin Control
-                  </li>
-                </ul>
-                <a
-                  href="#contact"
-                  class="btn btn-primary text-white mt-6 fw-bold"
-                  >Inquire</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Pricing Col 2 -->
-          <div class="col-md-3">
-            <div class="card bg-secondary text-center rounded-0">
-              <div class="card-body">
-                <div class="xl-text fw-bold">$199</div>
-                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
-                  Advanced
-                </h4>
-                <p>
-                  Unlock additional enhanced capabilities. Take your software
-                  solutions to the next level
-                </p>
-                <ul class="list-unstyled lh-lg mt-5">
-                  <li class="text-uppercase fs-5 fw-bold">
-                    Limited Storage Space
-                  </li>
-                  <li class="text-uppercase fs-5 fw-bold">
-                    Free Cloud Storage
-                  </li>
-                </ul>
-                <a
-                  href="#contact"
-                  class="btn btn-primary text-white mt-6 fw-bold"
-                  >Inquire</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Pricing Col 3 -->
-          <div class="col-md-3">
-            <div class="card bg-secondary text-center rounded-0">
-              <div class="card-body">
-                <div class="xl-text fw-bold">$299</div>
-                <h4 class="card-title text-primary text-uppercase fw-bold mb-5">
-                  Complete
-                </h4>
-                <p>
-                  Our complete pricing plan offers an all-inclusive package with
-                  advanced features
-                </p>
-                <ul class="list-unstyled lh-lg mt-5">
-                  <li class="text-uppercase fs-5 fw-bold">
-                    Deployment Protocol
-                  </li>
-                  <li class="text-uppercase fs-5 fw-bold">
-                    Premium Support Pack
-                  </li>
-                </ul>
-                <a
-                  href="#contact"
-                  class="btn btn-primary text-white mt-6 fw-bold"
-                  >Inquire</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section id="newsletter" class="newsletter my-6">
-      <div class="container">
-        <div class="row mb-4">
-          <div
-            class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center"
-          >
-            <h2 class="fw-bold">Subscribe And Follow</h2>
-            <p>
-              Stay updated with our latest news and announcements. Subscribe to
-              our newsletter and follow us on social media for valuable insights
-              and exciting updates.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-md-6 offset-md-3 d-flex flex-column align-items-center text-center"
-          >
-            <div class="input-group mb-3">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Enter Email Address"
-              />
-              <button
-                class="btn btn-primary text-white rounded-0"
-                type="button"
+                <span> Adresă </span>
+              </h4>
+              <a
+                href="https://maps.app.goo.gl/2B8NLYj7bGT1XQ4H8"
+                target="_blank"
+                class="contact-address"
+                >Strada 1 Decembrie 1918, Bloc S5B, Ap. 51, Galați 800552</a
               >
-                Submit
-              </button>
+            </div>
+            <div>
+              <h4 class="call-title">
+                <span class="call-title-icon">
+                  <i class="far fa-address-card"></i>
+                </span>
+                <span> Apelează-ne cu un click </span>
+              </h4>
+              <div class="phone-links-container">
+                <a class="phone-link" href="tel:+40745450393">
+                  <i class="fas fa-phone-square"></i>
+                  <span>0040 745 450 393</span>
+                </a>
+                <a class="phone-link" href="tel:+40741580359">
+                  <i class="fas fa-phone-square"></i>
+                  <span>0040 741 580 359 (Șofer Edi)</span>
+                </a>
+                <a class="phone-link" href="tel:+40723688329">
+                  <i class="fas fa-phone-square"></i>
+                  <span>0040 723 688 329 (Șofer Sandu)</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="section-call-to-action"></div>
     </section>
 
     <!-- Footer -->
@@ -881,55 +546,100 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 my-3">
-            <h6>About Vera</h6>
-            <p>
-              Vera is a dedicated software solutions company that aims to
-              provide exceptional services to its clients. We are committed to
-              delivering innovative and customized solutions that meet your
-              specific business needs.
-            </p>
-          </div>
-          <div class="col-md-4 my-3">
-            <h6>Links</h6>
-            <ul class="list-unstyled">
-              <li>
-                Important: <a href="#">Terms & Conditions</a>,
-                <a href="privacy.html">Privacy Policy</a>
-              </li>
-              <li>
-                Useful: <a href="index.html#expertise">Expertise</a>,
-                <a href="index.html#pricing">Pricing</a>,
-                <a href="index.html#newsletter">Newsletter</a>
-              </li>
-              <li>
-                Menu: <a href="index.html">Home</a>,
-                <a href="index.html#details">Details</a>,
-                <a href="index.html#solutions">Solutions</a>,
-                <a href="index.html#projects">Projects</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="mb-4">
-              <a href="#" class="text-decoration-none">
-                <i class="fab fa-facebook fa-3x text-light mx-2"></i>
-              </a>
-              <a href="#" class="text-decoration-none">
-                <i class="fab fa-twitter fa-3x text-light mx-2"></i>
-              </a>
-              <a href="#" class="text-decoration-none">
-                <i class="fab fa-instagram fa-3x text-light mx-2"></i>
-              </a>
-              <a href="#" class="text-decoration-none">
-                <i class="fab fa-pinterest fa-3x text-light mx-2"></i>
+            <div class="footer-contact-header">
+              <div>
+                <h4 class="footer-contact-title">Contact</h4>
+              </div>
+              <div class="footer-logo-container">
+                <img
+                  src="./images/ediontrans_logo_nobg.png"
+                  alt=""
+                  class="img-fluid footer-logo-img"
+                />
+                <span class="footer-logo-text">Edion Trans</span>
+              </div>
+            </div>
+            <div class="footer-contact-phone-numbers">
+              <h4 class="footer-contact-phone-numbers-title">
+                Numere de telefon:
+              </h4>
+              <div class="phone-numbers-container">
+                <a href="tel:+40745450393" class="footer-phone-link">
+                  <i class="fa-solid fa-phone-flip"></i>
+                  +40 745 450 393
+                </a>
+                <a href="tel:+40741580359" class="footer-phone-link">
+                  <i class="fa-solid fa-phone-flip"></i>
+                  +40 741 580 359</a
+                >
+                <a href="tel:+40723688329" class="footer-phone-link">
+                  <i class="fa-solid fa-phone-flip"></i>
+                  +40 723 688 329</a
+                >
+              </div>
+            </div>
+
+            <div class="footer-contact-email">
+              <h4 class="footer-contact-email-title">Email:</h4>
+              <a
+                href="mailto:ediontrans@yahoo.com"
+                class="footer-contact-email-link"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                <span> ediontrans@yahoo.com </span>
               </a>
             </div>
-            <p>
-              We would love to hear from you
-              <a href="mailto:contact@site.com"
-                ><strong>contact@site.com</strong></a
+
+            <div class="footer-contact-socials">
+              <h4 class="footer-contact-socials-title">Urmărește-ne:</h4>
+              <div class="">
+                <a
+                  href="https://www.facebook.com/edion.edion.391"
+                  class="footer-contact-socials-facebook"
+                >
+                  <i class="fa-brands fa-square-facebook fa-2x"></i>
+                  <span>Facebook</span>
+                </a>
+              </div>
+              <div class="">
+                <a href="#" class="footer-contact-socials-instagram">
+                  <i class="fa-2x fa-brands fa-instagram"></i>
+                  <span> Instagram </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 google-review-section my-3">
+            <h6 class="write-review-title">Recenzii Google</h6>
+            <button class="write-review-button">
+              <i class="fa-solid fa-user-pen"></i>
+              Scrie-ne o recenzie Google
+            </button>
+          </div>
+          <div class="col-md-4 my-3 useful-links-section">
+            <h4 class="useful-links">Link-uri utile</h4>
+            <div class="useful-links-container">
+              <a href="" class="useful-link-inner">
+                <i class="fa-solid fa-link"></i>
+                Transport Italia</a
               >
-            </p>
+              <a href="" class="useful-link-inner">
+                <i class="fa-solid fa-link"></i>
+                Transport Franța-Germania</a
+              >
+              <a href="" class="useful-link-inner">
+                <i class="fa-solid fa-link"></i>
+                Întrebări frecvente</a
+              >
+              <a href="" class="useful-link-inner">
+                <i class="fa-solid fa-link"></i>
+                Servicii</a
+              >
+              <a href="" class="useful-link-inner">
+                <i class="fa-solid fa-link"></i>
+                Despre noi</a
+              >
+            </div>
           </div>
         </div>
       </div>

@@ -14,6 +14,9 @@
   --clr-dark-grey-1: #3b3d3d;
   --clr-purple: hsla(275, 23%, 28%, 1);
   --clr-orange: rgb(255, 107, 0);
+  --clr-dark-green: hsla(182, 82%, 18%, 1);
+  --clr-lighter-green: rgb(17, 171, 176);
+  --clr-logo-green: hsl(162, 70%, 37%);
 }
 
 html {
@@ -148,6 +151,16 @@ body {
 
 .row-custom {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.img-custom {
+  width: 100%;
+}
+
+.col-custom {
+  max-width: 300px;
 }
 
 // Photo gallery end
@@ -281,6 +294,313 @@ body {
 }
 
 // Call-to-action end
+
+// Modal start
+.back-button {
+  cursor: pointer;
+}
+.form-control {
+  background-color: var(--clr-white);
+}
+
+.form-control:focus {
+  background-color: var(--clr-white);
+}
+
+form select {
+  color: #000 !important;
+}
+
+// Modal end
+
+// Contact-Us section start
+.contact-us-section {
+  background-color: var(--clr-dark-green);
+  padding: 19rem 0;
+}
+
+.contact-address {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.contact-address:hover {
+  color: white;
+}
+
+.phone-link:hover {
+  color: white;
+}
+
+.address-title {
+  color: var(--clr-black);
+}
+
+.call-title {
+  color: var(--clr-black);
+}
+
+.phone-links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-link {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 1.8rem;
+}
+
+.contact-us-title {
+  font-size: 3rem;
+}
+
+.contact-us-subtitle {
+  font-size: 1.6rem;
+  color: var(--clr-lighter-green);
+}
+
+.contact-us-text {
+  font-size: 3.2rem;
+}
+
+.section-content {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content-addresses-calls {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.address-title,
+.call-title {
+  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.call-title-text {
+  color: var(--clr-white);
+}
+
+.address-title-text {
+  color: var(--clr-white);
+}
+
+.address-title-icon,
+.call-title-icon {
+  color: var(--clr-white);
+}
+
+.fill-form-btn {
+  font-size: 1.6rem;
+  max-width: 40%;
+}
+
+.fill-form-btn:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  border-color: var(--clr-white);
+}
+
+.section-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.modal {
+  color: var(--clr-black);
+}
+
+.btn-close-modal {
+  font-size: 1.5rem;
+}
+
+// Contact-Us section end
+
+// ask-question-form start
+
+.ask-question-form {
+  padding: 2rem 5rem;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-actions {
+  display: flex;
+}
+
+.btn-submit-custom {
+  flex: 1;
+  font-size: 1.6rem;
+}
+
+.btn-cancel-custom {
+  flex: 1;
+  font-size: 1.6rem;
+}
+
+// ask-question-form end
+
+// footer start
+
+.footer-logo-img {
+  max-width: 40px;
+}
+
+.footer-logo-text {
+  font-family: "EspumaPro-Bold";
+}
+
+.footer-contact-phone-numbers {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-phone-link {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-phone-link:hover {
+  text-decoration: none;
+  color: var(--clr-logo-green);
+}
+
+.footer-contact-email-link {
+  text-decoration: none;
+}
+
+.footer-contact-email-link:hover {
+  color: var(--clr-orange);
+}
+
+.footer-contact-title {
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-contact-phone-numbers-title {
+  color: var(--clr-logo-green);
+  font-weight: bold;
+}
+
+.useful-links {
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+
+.useful-links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.useful-link-inner {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.useful-link-inner:hover {
+  color: var(--clr-logo-green);
+}
+
+.phone-numbers-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-text {
+  font-size: 3rem;
+  color: var(--clr-logo-green);
+}
+
+.footer-contact-email-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--clr-logo-green);
+}
+
+.footer-contact-email-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+  color: var(--clr-white);
+}
+
+.footer-contact-email-link:hover {
+  color: var(--clr-logo-green);
+}
+
+.footer-contact-socials-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--clr-logo-green);
+}
+
+.footer-contact-socials-facebook {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-contact-socials-facebook:hover {
+  color: var(--clr-logo-green);
+}
+
+.footer-contact-socials-instagram {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-contact-socials-instagram:hover {
+  color: var(--clr-logo-green);
+}
+
+.write-review-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.write-review-button {
+  font-size: 1.8rem;
+  padding: 0.5rem 1.5rem;
+  text-wrap: nowrap;
+}
+
+// footer end
 
 .list-container,
 .navbar-list {
@@ -479,14 +799,99 @@ body {
     width: 100%;
   }
 
-  .write-review-button {
-    font-size: 1.5rem;
-    padding: 0.5rem 1.5rem;
-    width: 100%;
-  }
-
   .testimonials-action-buttons {
     display: flex;
+    align-items: center;
+  }
+
+  // index - call-to-action
+  .call-to-action {
+    padding: 6rem 0;
+    gap: 1rem;
+  }
+
+  .call-to-action-title {
+    text-align: center;
+    font-size: 3.4rem;
+  }
+
+  .call-to-action-paragraph {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  // index - contact-us-section
+  .contact-us-section {
+    padding: 7.5rem 0;
+  }
+
+  .contact-us-text {
+    font-size: 2.2rem;
+  }
+
+  .section-content {
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+
+  .fill-form-btn {
+    max-width: 100%;
+  }
+
+  .section-content-addresses-calls {
+    padding: 2rem 3rem;
+  }
+
+  .contact-address {
+    font-size: 1.6rem;
+  }
+
+  .phone-link {
+    font-size: 1.6rem;
+  }
+
+  // index - footer
+
+  .footer {
+    padding-top: 2.5rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .footer-contact-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-contact-phone-numbers {
+    align-items: center;
+  }
+
+  .footer-contact-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contact-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .google-review-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .useful-links-section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
@@ -570,6 +975,53 @@ body {
     display: flex;
     align-items: center;
   }
+
+  // index - call-to-action
+  .call-to-action {
+    padding: 6rem 0;
+    gap: 1.2rem;
+  }
+
+  .call-to-action-title {
+    text-align: center;
+    font-size: 3.2rem;
+  }
+
+  .call-to-action-paragraph {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  // index - contact-us-section
+  .contact-us-section {
+    padding: 7rem 0;
+  }
+
+  .contact-us-text {
+    font-size: 2.2rem;
+    text-align: left !important;
+  }
+
+  .section-content {
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+
+  .fill-form-btn {
+    max-width: 75%;
+  }
+
+  .section-content-addresses-calls {
+    padding: 2rem 5rem;
+  }
+
+  .contact-address {
+    font-size: 1.6rem;
+  }
+
+  .phone-link {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -647,6 +1099,59 @@ body {
     display: flex;
     align-items: center;
   }
+  // index - call-to-action
+  .call-to-action {
+    padding: 6rem 0;
+    gap: 1.2rem;
+  }
+
+  .call-to-action-title {
+    text-align: center;
+    font-size: 3.4rem;
+  }
+
+  .call-to-action-paragraph {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  // index - contact-us-section
+  .contact-us-section {
+    padding: 10rem 0;
+  }
+
+  .contact-us-text {
+    font-size: 2.4rem;
+    text-align: left !important;
+  }
+
+  .section-content {
+    padding: 1rem 0;
+    gap: 3rem;
+  }
+
+  .fill-form-btn {
+    max-width: 100%;
+  }
+
+  .section-content-addresses-calls {
+    padding: 2rem 5rem;
+    width: 100%;
+  }
+
+  .contact-address {
+    font-size: 1.6rem;
+  }
+
+  .phone-link {
+    font-size: 1.6rem;
+  }
+
+  // index-footer
+  .write-review-button {
+    font-size: 1.2rem;
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -717,6 +1222,44 @@ body {
     display: flex;
     align-items: center;
   }
+
+  // index - contact-us-section
+  .contact-us-section {
+    padding: 12rem 0;
+  }
+
+  .contact-us-text {
+    font-size: 2.4rem;
+    text-align: left !important;
+  }
+
+  .section-content {
+    padding: 1rem 0;
+    gap: 3rem;
+  }
+
+  .fill-form-btn {
+    max-width: 100%;
+  }
+
+  .section-content-addresses-calls {
+    padding: 2rem 5rem;
+    width: 100%;
+  }
+
+  .contact-address {
+    font-size: 1.6rem;
+  }
+
+  .phone-link {
+    font-size: 1.6rem;
+  }
+
+  // index-footer
+  .write-review-button {
+    font-size: 1.2rem;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1201px) and (max-width: 1280px) {
@@ -776,7 +1319,7 @@ body {
   }
 
   .write-review-button {
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 0.5rem 1.5rem;
     width: 70%;
     flex: 1;
@@ -785,6 +1328,56 @@ body {
   .testimonials-action-buttons {
     display: flex;
     align-items: center;
+  }
+
+  // index - contact-us-section
+  .contact-us-section {
+    padding: 12rem 0;
+  }
+
+  .contact-us-text {
+    font-size: 2.4rem;
+    text-align: left !important;
+  }
+
+  .section-content {
+    padding: 1rem 0;
+    gap: 3rem;
+  }
+
+  .fill-form-btn {
+    max-width: 100%;
+  }
+
+  .section-content-addresses-calls {
+    padding: 2rem 5rem;
+    width: 100%;
+  }
+
+  .contact-address {
+    font-size: 1.6rem;
+  }
+
+  .phone-link {
+    font-size: 1.6rem;
+  }
+
+  // index-footer
+  .write-review-button {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  // contact-us hover effects
+  .phone-link:hover {
+    color: var(--clr-orange);
+    transition: all 0.3s ease;
+  }
+
+  .contact-address:hover {
+    color: var(--clr-orange);
   }
 }
 
@@ -802,6 +1395,38 @@ body {
 
   .write-review-button {
     flex: 1;
+  }
+
+  // index - contact-us-section
+  .contact-us-section {
+    padding: 12rem 0;
+  }
+
+  .contact-us-text {
+    font-size: 2.4rem;
+    text-align: left !important;
+  }
+
+  .section-content {
+    padding: 1rem 0;
+    // gap: 2rem;
+  }
+
+  .fill-form-btn {
+    max-width: 100%;
+  }
+
+  .section-content-addresses-calls {
+    padding: 2rem 5rem;
+    // width: 100%;
+  }
+
+  .contact-address {
+    font-size: 1.6rem;
+  }
+
+  .phone-link {
+    font-size: 1.6rem;
   }
 }
 

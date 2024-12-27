@@ -15,5 +15,17 @@
 
 - trimite un colet
 	- trimite colet Italia
-	- trimite colet Franta/Germania 
+	- trimite colet Franta/Germania
 
+- solve the problem with the back button
+
+initial-buttons-container -> transport-people-italy-container -> transport-people-italy-form || transport-people-france-germany-form || transport-airport-form || transport-people-locally-form
+
+
+initial-buttons-container -> tickets-flight -> flight-tickets-form
+
+initial-buttons-container -> button-send-parcel -> send-parcel-container -> send-parcel-italy || send-parcel-france-germany-form
+
+Important classes:
+
+-back-button

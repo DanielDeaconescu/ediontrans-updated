@@ -1510,6 +1510,7 @@ function createAskQuestionForm() {
   label3.innerText = "Mesajul dumneavoastră: ";
   const textarea = document.createElement("textarea");
   textarea.classList.add("form-control");
+  textarea.setAttribute("rows", "3");
   row3.appendChild(label3);
   row3.appendChild(textarea);
   askQuestionForm.appendChild(row3);
